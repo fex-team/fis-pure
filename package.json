@@ -1,0 +1,29 @@
+{
+  "name": "swan",
+  "version": "0.0.0",
+  "description": "A pure front end module solution with modjs",
+  "main": "swan.js",
+  "bin": {
+    "swan": "bin/swan"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fex-team/swan.git"
+  },
+  "keywords": [
+    "fis"
+  ],
+  "author": "hefangshi",
+  "license": "BSD",
+  "dependencies": {
+    "fis": "~1.7.8",
+    "fis-parser-bdtmpl": "0.0.3",
+    "fis-parser-less": "0.1.0",
+    "fis-postprocessor-require-async": "0.0.8",
+    "fis-prepackager-autoload": "0.0.0",
+    "fis-postpackager-reqmin": "0.0.1"
+  }
+}
