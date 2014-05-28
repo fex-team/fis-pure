@@ -1,29 +1,31 @@
 {
-  "name": "swan",
-  "version": "0.0.0",
-  "description": "A pure front end module solution with modjs",
-  "main": "swan.js",
+  "name": "fis-pure",
+  "version": "0.0.1",
+  "description": "A pure front end module solution with modjs.",
+  "main": "pure.js",
   "bin": {
-    "swan": "bin/swan"
+    "pure": "bin/pure",
+    "fis-pure": "bin/pure"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fex-team/swan.git"
+    "url": "https://github.com/fex-team/fis-pure.git"
   },
   "keywords": [
     "fis"
   ],
-  "author": "hefangshi",
+  "author": "fis",
   "license": "BSD",
   "dependencies": {
     "fis": "~1.7.8",
     "fis-parser-bdtmpl": "0.0.3",
     "fis-parser-less": "0.1.0",
     "fis-postprocessor-require-async": "0.0.8",
-    "fis-prepackager-autoload": "0.0.0",
-    "fis-postpackager-reqmin": "0.0.1"
+    "fis-prepackager-autoload": "0.0.1",
+    "fis-postpackager-reqmin": "0.0.1",
+    "fis-lint-jshint": "0.0.4"
   }
 }
