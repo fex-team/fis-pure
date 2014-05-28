@@ -8,7 +8,7 @@ fis.config.merge({
     modules: {
         parser: {
             less: 'less',
-            tmpl: 'bdtmpl'
+            tmpl: 'utc'
         },
         postprocessor: {
             js: "jswrapper, require-async",
@@ -22,8 +22,7 @@ fis.config.merge({
     },
     roadmap: {
         ext: {
-            less: 'css',
-            tmpl: 'js'
+            less: 'css'
         },
         path : [
             {
@@ -51,6 +50,14 @@ fis.config.merge({
                 //css文件会做csssprite处理
                 useSprite : true,
                 release : '${statics}/$&'
+            },
+            {
+                //前端模板
+                reg : '**.tmpl',
+                //当做类js文件处理，可以识别__inline, __uri等资源定位标识
+                isJsLike : true,
+                //只是内嵌，不用发布
+                release : false
             },
             {
                 reg : /.*\.(html|jsp|tpl|vm|htm|asp|aspx)/,
