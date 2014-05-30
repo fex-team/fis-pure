@@ -1,6 +1,6 @@
 {
   "name": "fis-pure",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A pure front end module solution with modjs.",
   "main": "pure.js",
   "bin": {
@@ -24,8 +24,8 @@
     "fis-parser-utc": "0.0.2",
     "fis-parser-less": "0.1.0",
     "fis-postprocessor-require-async": "0.0.8",
-    "fis-prepackager-autoload": "0.0.1",
-    "fis-postpackager-simple": "0.0.0",
+    "fis-prepackager-autoload": "0.0.x",
+    "fis-postpackager-simple": "0.0.x",
     "fis-lint-jshint": "0.0.4"
   }
 }
