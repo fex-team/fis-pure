@@ -11,6 +11,7 @@ fis-pure
 * [如何使用](#如何使用)
   * [安装](#安装)
   * [快速上手](#快速上手)
+  * [模块化加载](#模块化加载)
   * [目录规范](#目录规范)
   * [配置](#配置)
   * [更多资料](#更多资料)
@@ -52,11 +53,20 @@ pure可以自动压缩、合并页面引用到的所有资源，配置灵活，�
 
 快速上手请参考[前端模块化](http://fis.baidu.com/docs/advance/modjs-solution.html)
 
+### 模块化加载
+
+如何使用模块化加载可以参考[fis-pure-demo](https://github.com/hefangshi/fis-pure-demo)，大致需要以下几个步骤
+
+* page目录下添加页面index.html，页面中引用[Mod](https://github.com/fex-team/mod)，[示例](https://github.com/hefangshi/fis-pure-demo/blob/master/index.html#L7)
+* modules目录下添加页面脚本，如`main.js`，在页面中则可以通过`require('main')`加载静态资源，[示例](https://github.com/hefangshi/fis-pure-demo/blob/master/index.html#L31-L33)
+* 需要引用其他模块，以jquery.js为例，只要在modules目录中添加代码，在main.js中就可以通过`var $ = require('jquery')`加载，在通过`pure release`发布后，页面就会自动加载jquery.js与main.js。
+
 ### 目录规范
 
-pure自带了一个非常简单的目录规范，可以用一句话来描述 
+pure自带了一个非常简单的目录规范
 
-**所有组件化的脚本、样式、图片均放在modules目录中，可以按照组件划分目录，非模块化的脚本放在lib目录中**
+* 所有组件化的脚本、样式、图片均放在modules目录中，可以按照组件划分目录，非模块化的脚本放在lib目录中。
+* page目录下的页面文件会发布到根目录，静态资源会发布到static目录。
 
 任何 ``目录规范``、``部署规范``、``编译规范`` 都是可配置的（[配置代码](https://github.com/fex-team/fis-pure/blob/master/pure.js#L27-L74)）。
 
