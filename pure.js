@@ -26,6 +26,11 @@ fis.config.merge({
         },
         path : [
             {
+                reg : /^\/page\/(.*)$/i,
+                useCache : false,
+                release : '$1'
+            },
+            {
                 //一级同名组件，可以引用短路径，比如modules/jquery/juqery.js
                 //直接引用为var $ = require('jquery');
                 reg : /^\/modules\/([^\/]+)\/\1\.(js)$/i,
@@ -61,6 +66,7 @@ fis.config.merge({
             },
             {
                 reg : /.*\.(html|jsp|tpl|vm|htm|asp|aspx)/,
+                useCache : false,
                 release : '$&'
             },
             {
