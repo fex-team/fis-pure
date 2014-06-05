@@ -57,7 +57,7 @@ pure可以自动压缩、合并页面引用到的所有资源，配置灵活，�
 
 如何使用模块化加载可以参考[fis-pure-demo](https://github.com/hefangshi/fis-pure-demo)，大致需要以下几个步骤
 
-* page目录下添加页面index.html，页面中引用[Mod](https://github.com/fex-team/mod)，[示例](https://github.com/hefangshi/fis-pure-demo/blob/master/index.html#L7)
+* 在需要模块化资源管理的页面，如index.html中引用[Mod](https://github.com/fex-team/mod)，[示例](https://github.com/hefangshi/fis-pure-demo/blob/master/index.html#L7)，注意[Mod](https://github.com/fex-team/mod)需放在lib文件夹内，因为这是模块化加载库，不能被模块化。
 * modules目录下添加页面脚本，如`main.js`，在页面中则可以通过`require('main')`加载静态资源，[示例](https://github.com/hefangshi/fis-pure-demo/blob/master/index.html#L31-L33)
 * 需要引用其他模块，以jquery.js为例，只要在modules目录中添加代码，在main.js中就可以通过`var $ = require('jquery')`加载，在通过`pure release`发布后，页面就会自动加载jquery.js与main.js。
 
