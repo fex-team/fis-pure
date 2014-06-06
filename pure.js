@@ -14,8 +14,7 @@ fis.config.merge({
             js: "jswrapper, require-async",
             html: "require-async"
         },
-        postpackager : 'simple',
-        prepackager : 'autoload',
+        postpackager : ['autoload', 'simple'],
         lint : {
             js : 'jshint'
         }
