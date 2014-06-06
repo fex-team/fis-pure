@@ -1,6 +1,6 @@
 {
   "name": "fis-pure",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "A pure front end module solution with modjs.",
   "main": "pure.js",
   "bin": {
