@@ -49,8 +49,13 @@ fis.config.merge({
                 release : '${statics}/$&'
             },
             {
+                //less的mixin文件无需发布
+                reg : /^(.*)mixin\.less$/i,
+                release : false
+            },
+            {
                 //其他css文件
-                reg : "**.css",
+                reg : /^(.*)\.(css|less)$/i,
                 //css文件会做csssprite处理
                 useSprite : true,
                 release : '${statics}/$&'
