@@ -1,6 +1,6 @@
 {
   "name": "fis-pure",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A pure front end module solution with modjs.",
   "main": "pure.js",
   "bin": {
@@ -20,7 +20,7 @@
   "author": "fis",
   "license": "BSD",
   "dependencies": {
-    "fis": "1.7.12",
+    "fis": "1.7.14",
     "fis-parser-utc": "0.0.2",
     "fis-parser-less": "0.1.0",
     "fis-postprocessor-require-async": "0.0.8",
