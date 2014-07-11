@@ -89,19 +89,19 @@ fis.config.merge({
                 type: 'amd'
             }
         },
-        jshint : {
-            //using Chinese reporter
-            i18n : 'zh-CN',
-            camelcase : true,
-            curly : true,
-            eqeqeq : true,
-            forin : true,
-            immed : true,
-            latedef : true,
-            newcap : true,
-            noarg : true,
-            noempty : true,
-            node : true
+        lint : {
+            jshint : {
+                camelcase : true,
+                curly : true,
+                eqeqeq : true,
+                forin : true,
+                immed : true,
+                latedef : true,
+                newcap : true,
+                noarg : true,
+                noempty : true,
+                node : true
+            }
         }
     }
 });
