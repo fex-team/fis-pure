@@ -1,6 +1,6 @@
 {
   "name": "fis-pure",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A pure front end module solution with modjs.",
   "main": "pure.js",
   "bin": {
@@ -8,6 +8,7 @@
     "fis-pure": "bin/pure"
   },
   "scripts": {
+    "uninstall": "node bin/pure server stop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

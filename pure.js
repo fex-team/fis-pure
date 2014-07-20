@@ -40,7 +40,7 @@ fis.config.merge({
                 release : '${statics}/$&'
             },
             {
-                //modules目录下的其他文件
+                //modules目录下的其他脚本文件
                 reg : /^\/modules\/(.*)\.(js)$/i,
                 //是组件化的，会被jswrapper包装
                 isMod : true,
@@ -56,8 +56,6 @@ fis.config.merge({
             {
                 //其他css文件
                 reg : /^(.*)\.(css|less)$/i,
-                //css文件会做csssprite处理
-                useSprite : true,
                 release : '${statics}/$&'
             },
             {
