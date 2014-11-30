@@ -67,7 +67,7 @@ fis.config.merge({
                 release : false
             },
             {
-                reg : /.*\.(html|jsp|tpl|vm|htm|asp|aspx)/,
+                reg : /.*\.(html|jsp|tpl|vm|htm|asp|aspx|php)/,
                 useCache : false,
                 release : '$&'
             },
