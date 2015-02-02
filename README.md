@@ -1,3 +1,25 @@
+在原PURE的基础上做了一下扩展，支持CSS SPRITE。
+
+环境要求：node
+
+使用步骤：
+
+一、下载zip包或者clone到任意文件夹，打开FIS-PURE
+
+二、安装依赖
+````
+npm install fis --save
+npm install fis-lint-jshint --save
+npm install fis-parser-less --save
+npm install fis-parser-utc --save
+npm install fis-postpackager-autoload --save
+npm install fis-postpackager-simple --save
+npm install fis-postprocessor-require-async --save
+npm install fis-spriter-csssprites --save
+npm install /downloadPath/fis-pure -g
+````
+执行完后，会安装或覆盖原有PURE-FIS到全局node_modules。
+
 fis-pure
 ====
 
