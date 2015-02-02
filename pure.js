@@ -25,6 +25,12 @@ fis.config.merge({
         },
         path : [
             {
+                reg : /^\/modules\/(.*)\.(css)$/i,
+                //配置useSprite表示reg匹配到的css需要进行图片合并
+                useSprite: true,
+                release : '${statics}/$&'
+            },
+            {
                 reg : /^\/page\/(.*)$/i,
                 useCache : false,
                 release : '$1'
