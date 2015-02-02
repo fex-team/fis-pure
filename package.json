@@ -27,6 +27,7 @@
     "fis-postprocessor-require-async": "0.0.8",
     "fis-postpackager-autoload": "0.0.x",
     "fis-postpackager-simple": "0.0.x",
-    "fis-lint-jshint": "0.0.4"
+    "fis-lint-jshint": "0.0.4",
+    "fis-spriter-csssprites": "0.2.5"
   }
 }
