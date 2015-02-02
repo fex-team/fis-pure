@@ -3,7 +3,9 @@
 环境要求：node
 
 使用步骤：
+
 一、下载zip包或者clone到任意文件夹，打开FIS-PURE
+
 二、安装依赖
 ````
 npm install fis --save
