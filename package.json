@@ -1,32 +1,32 @@
 {
-  "name": "fis-pure",
-  "version": "0.1.0",
-  "description": "A pure front end module solution with modjs.",
-  "main": "pure.js",
-  "bin": {
-    "pure": "bin/pure",
-    "fis-pure": "bin/pure"
-  },
-  "scripts": {
-    "uninstall": "node bin/pure server stop",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fex-team/fis-pure.git"
-  },
-  "keywords": [
-    "fis"
-  ],
-  "author": "fis",
-  "license": "BSD",
-  "dependencies": {
-    "fis": "1.9.10",
-    "fis-parser-utc": "0.0.2",
-    "fis-parser-less": "0.1.0",
-    "fis-postprocessor-require-async": "0.0.8",
-    "fis-postpackager-autoload": "0.0.x",
-    "fis-postpackager-simple": "0.0.x",
-    "fis-lint-jshint": "0.0.4"
-  }
+    "name": "fis-pure",
+    "version": "0.1.1",
+    "description": "A pure front end module solution with modjs.",
+    "main": "pure.js",
+    "bin": {
+        "pure": "bin/pure",
+        "fis-pure": "bin/pure"
+    },
+    "scripts": {
+        "uninstall": "node bin/pure server stop",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fex-team/fis-pure.git"
+    },
+    "keywords": [
+        "fis"
+    ],
+    "author": "fis",
+    "license": "BSD",
+    "dependencies": {
+        "fis": "1.9.10",
+        "fis-parser-utc": "0.0.2",
+        "fis-parser-less": "0.1.0",
+        "fis-postprocessor-require-async": "0.0.8",
+        "fis-postpackager-autoload": "0.0.x",
+        "fis-postpackager-simple": "0.0.x",
+        "fis-lint-jshint": "0.0.4"
+    }
 }
