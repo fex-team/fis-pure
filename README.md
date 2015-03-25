@@ -7,6 +7,7 @@ pure是基于FIS二次封装能力封装而成的解决方案，可以直接使�
 
 ## 目录
 * [模块化开发](#模块化开发)
+* [组件生态](#组件生态)
 * [自动性能优化](#自动性能优化)
 * [前端语言支持](#前端语言支持)
 * [简化环境安装](#简化环境安装)
@@ -24,6 +25,18 @@ pure是基于FIS二次封装能力封装而成的解决方案，可以直接使�
 * 不仅仅是脚本模块化，pure带给你模版、脚本、样式的组件化方案。
 * 自动加载模块化依赖，无需手动引入静态资源。
 * 与Node.js风格一致的模块化开发体验，告别 ```define```。
+
+## 组件生态
+
+使用 `pure install` 命令可以下载[fis-components](https://github.com/fis-components)组件，在业务代码中可以直接通过 `require` 使用。
+
+```bash
+pure install zepto
+```
+
+```javascript
+var $ = require('zepto');
+```
 
 ## 自动性能优化
 
@@ -69,6 +82,7 @@ pure自带了一个非常简单的目录规范
 
 * 所有组件化的脚本、样式、图片均放在modules目录中，可以按照组件划分目录，非模块化的脚本放在lib目录中。
 * page目录下的页面文件会发布到根目录，静态资源会发布到static目录。
+* pure install获得的组件保存在components目录
 
 任何 ``目录规范``、``部署规范``、``编译规范`` 都是可配置的（[配置代码](https://github.com/fex-team/fis-pure/blob/master/pure.js#L27-L74)）。
 
