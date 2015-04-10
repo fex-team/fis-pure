@@ -5,6 +5,19 @@ fis-pure
 
 pure是基于FIS二次封装能力封装而成的解决方案，可以直接使用，也可以参考fis-pure自行封装或组合使用插件来构建属于自己的一体化解决方案。
 
+> 因为很重要，所以写在最前面
+
+如果希望在pure的基础上添加自己的目录规范，即修改 `roadmap.path` 时，**不可以** 使用fis.config.merge或者fis.config.set，而必须按照下面的方式进行配置
+
+```javascript
+fis.config.get('roadmap.path').unshift({
+    reg: 'map.json',
+    release: false
+});
+```
+
+roadmap的配置具体可以参考 [roadmap详解](http://fis.baidu.com/docs/advance/roadmap.html)
+
 ## 目录
 * [模块化开发](#模块化开发)
 * [组件生态](#组件生态)
