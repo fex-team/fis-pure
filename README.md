@@ -81,6 +81,8 @@ pure可以自动压缩、合并页面引用到的所有资源，配置灵活，�
 
 快速上手请参考[前端模块化](http://fis.baidu.com/docs/advance/modjs-solution.html)
 
+开发angular应用还可以参考[pure-angular-demo](https://github.com/hefangshi/pure-angular-demo)
+
 ### 模块化加载
 
 如何使用模块化加载可以参考[fis-pure-demo](https://github.com/hefangshi/fis-pure-demo)，大致需要以下几个步骤
