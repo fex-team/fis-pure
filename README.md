@@ -91,6 +91,16 @@ pure可以自动压缩、合并页面引用到的所有资源，配置灵活，�
 * modules目录下添加页面脚本，如`main.js`，在页面中则可以通过`require('main')`加载静态资源。 [示例](https://github.com/hefangshi/fis-pure-demo/blob/master/index.html#L31-L33)
 * 需要引用其他模块，以jquery.js为例，只要在modules目录中添加代码，在main.js中就可以通过`var $ = require('jquery')`加载，在通过`pure release`发布后，页面就会自动加载jquery.js与main.js。
 
+#### 使用变量来异步加载模块化代码
+
+我们经常会遇到有些应用场景需要通过运行时的变量来决定异步加载哪些模块，由于 pure 的依赖分析均在编译期完成，无法知道变量可能的值有哪些。因此为了实现这个目标，需要手动在使用变量加载异步变量的脚本中添加一些异步依赖的注释。
+
+```javascript
+/**
+* @require.async page/detail
+*/
+```
+
 ### 目录规范
 
 pure自带了一个非常简单的目录规范
