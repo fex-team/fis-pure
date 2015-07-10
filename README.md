@@ -1,7 +1,9 @@
 fis-pure
 ====
 
-基于FIS的纯前端模块化解决方案pure
+基于FIS的纯前端模块化解决方案pure。
+
+**建议刚接触这个方案的同学直接使用 [FIS3](https://github.com/fex-team/fis3) 而非 pure，FIS3可以更轻松的实现 pure 的功能。**
 
 pure是基于FIS二次封装能力封装而成的解决方案，可以直接使用，也可以参考fis-pure自行封装或组合使用插件来构建属于自己的一体化解决方案。
 
